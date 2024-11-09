@@ -31,7 +31,6 @@ def delete_previous_wallpapers():
 
 def set_wallpaper(file_name):
     file_location = f"{os.getcwd()}/{file_name}"
-    print(f"osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"{file_location}\"'")
     os.system(f"osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"{file_location}\"'")
 
 def download_and_save_image(image_url):
